@@ -1,6 +1,6 @@
 {% set name = "spacy-alignments" %}
 {% set module_name = "spacy_alignments" %}
-{% set version = "0.8.4" %}
+{% set version = "0.8.5" %}
 
 package:
   name: {{ name }}
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: "d4702997f459d30e537f638fbb540151adfab88aa2969f9d0db3e3ba39f47bdb"
+  sha256: 94ecb48f884ab8fa479d9929997281ebe0dc5b98fb8b5e53ebc252e88b023e21
 
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
